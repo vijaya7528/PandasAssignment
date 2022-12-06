@@ -1,9 +1,11 @@
 # PandasAssignment
 
 Q1. How do you load a CSV file into a Pandas DataFrame?
+
 df=pd.read_csv("file path/link")
 
 Q2. How do you check the data type of a column in a Pandas DataFrame?
+
 df.dtypes
 
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
@@ -12,9 +14,15 @@ df.loc[(df['TotalMarks'] >= 50) & (df['TotalMarks'] <= 79)]
 
 Q4. How do you rename columns in a Pandas DataFrame?
 
+df["new_column"]=df["old_column_name"]
+
 Q5. How do you drop columns in a Pandas DataFrame?
 
+df.drop("column_name",axis=1)
+
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
+
+df["column_name"].unique()
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
 
@@ -22,7 +30,22 @@ Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
 
 Q9. How do you concatenate two Pandas DataFrames?
 
+We can concatenate two dataframes using .concate() function 
+eg:
+data1={'Name':['Vijaya','Harish'],'Age':[23,18],'Address':['Pune','Washim']
+      }
+data2={'Name':'Radha','Age':25,'Address':'Wardha'}
+# Convert the dictionary into DataFrame  
+df = pd.DataFrame(data1,index=[0,2])
+ 
+# Convert the dictionary into DataFrame  
+df1 = pd.DataFrame(data2, index=[1])
+#res=[df,df1]
+result_df=pd.concat([df,df1])
+result_df     
+
 Q10. How do you merge two Pandas DataFrames on a specific column?
+
 
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
