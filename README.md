@@ -1,6 +1,7 @@
 # PandasAssignment
 
 Q1. How do you load a CSV file into a Pandas DataFrame?
+df=pd.read_csv("file path/link")
 
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 
