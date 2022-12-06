@@ -4,8 +4,11 @@ Q1. How do you load a CSV file into a Pandas DataFrame?
 df=pd.read_csv("file path/link")
 
 Q2. How do you check the data type of a column in a Pandas DataFrame?
+df.dtypes
 
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
+
+df.loc[(df['TotalMarks'] >= 50) & (df['TotalMarks'] <= 79)]
 
 Q4. How do you rename columns in a Pandas DataFrame?
 
