@@ -26,6 +26,7 @@ df["column_name"].unique()
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
 
+
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
 
 Q9. How do you concatenate two Pandas DataFrames?
@@ -51,28 +52,61 @@ Q11. How do you group data in a Pandas DataFrame by a specific column and apply 
 
 Q12. How do you pivot a Pandas DataFrame?
 
+
+
 Q13. How do you change the data type of a column in a Pandas DataFrame?
 
 Q14. How do you sort a Pandas DataFrame by a specific column?
 
+df.sort()
+
 Q15. How do you create a copy of a Pandas DataFrame?
+
+df.copy(deep)
 
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
 
+dataFrame.loc[(dataFrame['Salary']>=100000) & (dataFrame['Age']< 40) & (dataFrame['JOB'].str.startswith('D')),['Name','JOB']]
+
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
+
+# Using multiple columns mean using DataFrame.mean()
+df2 = df[["Fee","Discount"]].mean()
+print(df2)
+
+# Average of each column using DataFrame.mean()
+df2 = df.mean(axis=0)
+print(df2)
+
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
 
+df.std()
+
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+
+
 
 Q20. How do you select specific columns in a DataFrame using their labels?
 
+df['hue']
+
 Q21. How do you select specific rows in a DataFrame using their indexes?
+
+df.iloc[[2, 3, 4]]
+or 
+df.loc[[2, 3, 4]]
 
 Q22. How do you sort a DataFrame by a specific column?
 
+df.sort_values()
+
 Q23. How do you create a new column in a DataFrame based on the values of another column?
 
+
+
 Q24. How do you remove duplicates from a DataFrame?
+
+df.drop_duplicates(subset="First Name", keep=False, inplace=True)
 
 Q25. What is the difference between .loc and .iloc in Pandas?
