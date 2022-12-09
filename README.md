@@ -105,10 +105,14 @@ df.sort_values()
 
 Q23. How do you create a new column in a DataFrame based on the values of another column?
 
-
+df['colG'] = df.apply(lambda row: row.colC + row.colE, axis=1)
 
 Q24. How do you remove duplicates from a DataFrame?
 
 df.drop_duplicates(subset="First Name", keep=False, inplace=True)
 
 Q25. What is the difference between .loc and .iloc in Pandas?
+
+The loc() function is label based data selecting method which means that we have to pass the name of the row or column which we want to select. This method includes the last element of the range passed in it, unlike iloc(). loc() can accept the boolean data unlike iloc().
+
+The iloc() function is an indexed-based selecting method which means that we have to pass an integer index in the method to select a specific row/column. This method does not include the last element of the range passed in it unlike loc(). iloc() does not accept the boolean data unlike loc(). 
