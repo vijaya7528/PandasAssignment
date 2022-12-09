@@ -26,8 +26,11 @@ df["column_name"].unique()
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
 
+df.isna().sum()
 
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
+
+data["Gender"].fillna("No Gender", inplace = True)
 
 Q9. How do you concatenate two Pandas DataFrames?
 
