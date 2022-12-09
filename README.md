@@ -56,6 +56,10 @@ Q11. How do you group data in a Pandas DataFrame by a specific column and apply 
 
 Q12. How do you pivot a Pandas DataFrame?
 
+The pivot() function is used to reshaped a given DataFrame organized by given index / column values. This function does not support data aggregation, multiple values will result in a MultiIndex in the columns.
+
+Syntax: DataFrame.pivot(self, index=None, columns=None, values=None)
+
 
 
 Q13. How do you change the data type of a column in a Pandas DataFrame?
