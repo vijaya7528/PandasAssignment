@@ -56,6 +56,8 @@ Q12. How do you pivot a Pandas DataFrame?
 
 Q13. How do you change the data type of a column in a Pandas DataFrame?
 
+df = df.astype(required_datatype)
+
 Q14. How do you sort a Pandas DataFrame by a specific column?
 
 df.sort()
@@ -85,7 +87,7 @@ df.std()
 
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
 
-
+dataframe[‘first_column’].corr(dataframe[‘second_column’])
 
 Q20. How do you select specific columns in a DataFrame using their labels?
 
