@@ -39,12 +39,12 @@ eg:
 data1={'Name':['Vijaya','Harish'],'Age':[23,18],'Address':['Pune','Washim']
       }
 data2={'Name':'Radha','Age':25,'Address':'Wardha'}
-# Convert the dictionary into DataFrame  
+ Convert the dictionary into DataFrame  
 df = pd.DataFrame(data1,index=[0,2])
  
-# Convert the dictionary into DataFrame  
+ Convert the dictionary into DataFrame  
 df1 = pd.DataFrame(data2, index=[1])
-#res=[df,df1]
+
 result_df=pd.concat([df,df1])
 result_df     
 
