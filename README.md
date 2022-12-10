@@ -88,12 +88,16 @@ dataFrame.loc[(dataFrame['Salary']>=100000) & (dataFrame['Age']< 40) & (dataFram
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
 
-# Using multiple columns mean using DataFrame.mean()
+ Using multiple columns mean using DataFrame.mean()
+
 df2 = df[["Fee","Discount"]].mean()
+
 print(df2)
 
-# Average of each column using DataFrame.mean()
+ Average of each column using DataFrame.mean()
+
 df2 = df.mean(axis=0)
+
 print(df2)
 
 
