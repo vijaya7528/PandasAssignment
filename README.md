@@ -35,17 +35,23 @@ data["Gender"].fillna("No Gender", inplace = True)
 Q9. How do you concatenate two Pandas DataFrames?
 
 We can concatenate two dataframes using .concate() function 
+
 eg:
+
 data1={'Name':['Vijaya','Harish'],'Age':[23,18],'Address':['Pune','Washim']
       }
 data2={'Name':'Radha','Age':25,'Address':'Wardha'}
+ 
  Convert the dictionary into DataFrame  
+
 df = pd.DataFrame(data1,index=[0,2])
  
  Convert the dictionary into DataFrame  
+
 df1 = pd.DataFrame(data2, index=[1])
 
 result_df=pd.concat([df,df1])
+
 result_df     
 
 Q10. How do you merge two Pandas DataFrames on a specific column?
